@@ -1,3 +1,134 @@
+/* Language Selector Dropdown in header */
+/* Language Selector Globe Icon */
+/* Language Selector Globe Icon and Dropdown */
+.language-selector {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.lang-label {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+.globe-dropdown {
+  display: flex;
+  align-items: center;
+  background: #0071c5;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.globe-outline {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.globe-dropdown select {
+  background: #0071c5;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  font-weight: 500;
+}
+.globe-dropdown select:focus {
+  background: #005fa3;
+}
+.dropdown-arrow {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: -2rem;
+  pointer-events: none;
+}
+/* Style Google Translate dropdown to match site */
+#google_translate_element {
+  background: #0071c5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+#google_translate_element select {
+  background: #fff;
+  color: #0071c5;
+  border: 1px solid #0071c5;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+}
+#google_translate_element span {
+  color: #fff !important;
+  font-weight: bold;
+}
+/* Custom style for accordion button to match Intel color and size */
+.intel-btn {
+  background-color: #0071c5 !important;
+  color: #fff !important;
+  font-size: 1.15rem !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.intel-btn:hover, .intel-btn:focus {
+  background-color: #005fa3 !important;
+  color: #fff !important;
+  outline: none;
+}
+/* Ensure three-column section stays in columns on all screen sizes */
+.three-col-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.three-col-section .col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+@media (max-width: 768px) {
+  .three-col-section .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Custom icon colors for three-column section */
+.icon-global {
+  color: #0071c5; /* Intel blue */
+}
+.icon-green {
+  color: #43a047; /* Green for sustainability */
+}
+.icon-inclusive {
+  color: #00838f; /* Teal for inclusion */
+}
+/* Custom button style for subscription form */
+.custom-btn {
+  background-color: #0071c5; /* Intel blue */
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.custom-btn:hover, .custom-btn:focus {
+  background-color: #005fa3;
+  color: #fff;
+  outline: none;
+}
 /* Reset / Base Styles */
 * {
   margin: 0;

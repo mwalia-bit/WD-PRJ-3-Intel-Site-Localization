@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,165 +11,267 @@
   <!-- Font Awesome for social media icons -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!-- Bootstrap RTL CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLa3e1O3y6Q6hJty5KVphtPhzWj9WO1clHTMGa5a2bvo1zWj8U1Qd6U6z60z6M" crossorigin="anonymous">
+
 </head>
+
 <body>
+  
+  <main id="main-content" tabindex="-1">
 
   <!-- Header / Hero Section -->
-  <header>
-    <div>
+  <header role="banner">
+  <div style="position:relative;">
       <a href="https://www.intel.com" target="_blank">
-        <img src="img/intel logo.gif" alt="Intel Logo Animated" />
+        <img src="img/intel logo.gif" alt="شعار إنتل المتحرك" />
       </a>
-      <h1>Sustainability Through the Ages</h1>
+      <!-- Language Selector Globe Icon and Dropdown -->
+      <div class="language-selector">
+        <span class="lang-label">Select your language</span>
+        <span class="globe-dropdown">
+          <svg class="globe-outline" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14" stroke="#fff" stroke-width="2" fill="none"/>
+            <ellipse cx="16" cy="16" rx="8" ry="14" stroke="#fff" stroke-width="2" fill="none"/>
+            <line x1="2" y1="16" x2="30" y2="16" stroke="#fff" stroke-width="2"/>
+            <line x1="16" y1="2" x2="16" y2="30" stroke="#fff" stroke-width="2"/>
+          </svg>
+          <select onchange="changeLanguage(this.value)">
+            <option value="" disabled selected>اختر اللغة</option>
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="zh-CN">中文</option>
+            <option value="ru">Русский</option>
+          </select>
+          <span class="dropdown-arrow">&#9660;</span>
+        </span>
+      </div>
+      <h1>الاستدامة عبر العصور</h1>
       <p>
-        Discover Intel’s progress across the decades and see how innovation has driven our mission to create a greener, more sustainable future for both technology and the world. From past breakthroughs to future goals, Intel’s timeline highlights how innovation and responsibility go hand in hand to shape a sustainable path forward for technology and society.
+        استكشف رحلة Intel عبر الزمن، واكتشف كيف ساهم التزامنا بالابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا ولكوكبنا.
       </p>
     </div>
   </header>
 
   <!-- Timeline Section -->
-  <section role="region" aria-label="Intel Sustainability Timeline">
+  <section role="region" aria-label="الاستدامة عبر العصور من Intel" dir="rtl">
     <!-- Card 1 -->
     <div class="card">
-      <h2>1968</h2>
+  <h2>١٩٦٨</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/1968 Intel Founded.jpeg" alt="Intel Founded in 1968" />
+          <img src="img/1968 Intel Founded.jpeg" alt="تأسيس إنتل عام 1968" />
         </div>
         <div class="card-back">
-          <h3>Intel Founded</h3>
-          <p>Robert Noyce and Gordon Moore rename NM Electronics to Intel Corporation, laying the foundation for decades of technological innovation.</p>
+          <h3>تأسست شركة إنتل</h3>
+          <p>تأسست شركة إنتل، لتبدأ رحلة الابتكار في عالم التكنولوجيا.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 2 -->
     <div class="card">
-      <h2>1971</h2>
+  <h2>١٩٧١</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/intel 4004 microprocessor (1971).jpeg" alt="Intel 4004 microprocessor released in 1971" />
+          <img src="img/intel 4004 microprocessor (1971).jpeg" alt="إصدار معالج إنتل 4004 عام 1971" />
         </div>
         <div class="card-back">
-          <h3>First Microprocessor</h3>
-          <p>Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution.</p>
+          <h3>أول معالج دقيق</h3>
+          <p>أطلقت شركة إنتل معالجها 4004، وهو أول معالج تجاري في العالم مما أشعل ثورة المعالجات الدقيقة.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="card">
-      <h2>1978</h2>
+  <h2>١٩٧٨</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/intel 8086.jpeg" alt="Intel 8086 processor in 1978" />
+          <img src="img/intel 8086.jpeg" alt="معالج إنتل 8086 عام 1978" />
         </div>
         <div class="card-back">
-          <h3>8086 Processor</h3>
-          <p>Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers.</p>
+          <h3>معالج 8086</h3>
+          <p>إطلاق معالج 8086 الذي أسس بنية x86 التي تشغل العديد من أجهزة الكمبيوتر والخوادم.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 4 -->
     <div class="card">
-      <h2>1985</h2>
+  <h2>١٩٨٥</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/intel 386.jpeg" alt="Intel 386 processor in 1985" />
+          <img src="img/intel 386.jpeg" alt="معالج إنتل 386 عام 1985" />
         </div>
         <div class="card-back">
-          <h3>386 Processor</h3>
-          <p>Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for PCs.</p>
+          <h3>معالج 386</h3>
+          <p>قدمت إنتل معالج 386 ذو بنية 32-بت، مما أتاح أداءً أفضل وتعدد المهام لأجهزة الكمبيوتر.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 5 -->
     <div class="card">
-      <h2>2006</h2>
+  <h2>٢٠٠٦</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/Intel 2006 GHG Emissions.jpg" alt="Intel peak greenhouse gas emissions in 2006" />
+          <img src="img/Intel 2006 GHG Emissions.jpg" alt="انبعاثات غازات الدفيئة القصوى لإنتل عام 2006" />
         </div>
         <div class="card-back">
-          <h3>Peak GHG Emissions</h3>
-          <p>This year marks Intel's highest annual greenhouse gas emissions. Intel then invests heavily in renewable energy and energy-efficient manufacturing to reverse this trend.</p>
+          <h3>ذروة انبعاثات الغازات الدفيئة</h3>
+          <p>شهد هذا العام أعلى انبعاثات سنوية للغازات الدفيئة من إنتل، ثم بدأت الشركة الاستثمار بكثافة في الطاقة المتجددة والتصنيع الفعال للطاقة لعكس هذا الاتجاه.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 6 -->
     <div class="card">
-      <h2>2020</h2>
+  <h2>٢٠٢٠</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/Intel RISE Strategy.jpeg" alt="Intel RISE strategy in 2020" />
+          <img src="img/Intel RISE Strategy.jpeg" alt="استراتيجية إنتل RISE عام 2020" />
         </div>
         <div class="card-back">
-          <h3>RISE Strategy</h3>
-          <p>Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals to drive progress on climate action, water stewardship, and waste reduction.</p>
+          <h3>استراتيجية RISE</h3>
+          <p>أطلقت إنتل استراتيجية RISE (المسؤولة، الشاملة، المستدامة، الممكنة) وأهداف 2030 لدفع التقدم في العمل المناخي، إدارة المياه، وتقليل النفايات.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 7 -->
     <div class="card">
-      <h2>2022</h2>
+  <h2>٢٠٢٢</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/Intel Net Zero 2040.jpeg" alt="Intel Net Zero 2040 announcement in 2022" />
+          <img src="img/Intel Net Zero 2040.jpeg" alt="إعلان إنتل Net Zero 2040 عام 2022" />
         </div>
         <div class="card-back">
-          <h3>Net-Zero By 2040</h3>
-          <p>Intel commits to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040.</p>
+          <h3>صافي انبعاثات صفرية بحلول 2040</h3>
+          <p>تلتزم إنتل بتحقيق صافي انبعاثات غازات دفيئة صفرية (النطاق 1 و2) عبر عملياتها العالمية بحلول عام 2040.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 8 -->
     <div class="card">
-      <h2>2023</h2>
+  <h2>٢٠٢٣</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/Intel 2023 Renewable Energy.png" alt="Intel 99 percent renewable energy in 2023" />
+          <img src="img/Intel 2023 Renewable Energy.png" alt="استخدام إنتل للطاقة المتجددة بنسبة 99٪ عام 2023" />
         </div>
         <div class="card-back">
-          <h3>Renewable Electricity</h3>
-          <p>Intel achieves 99% renewable electricity usage worldwide, drastically lowering carbon emissions and advancing sustainability.</p>
+          <h3>الكهرباء المتجددة</h3>
+          <p>حققت إنتل استخدام الكهرباء المتجددة بنسبة 99٪ حول العالم، مما خفض الانبعاثات الكربونية بشكل كبير وعزز الاستدامة.</p>
         </div>
       </div>
     </div>
 
     <!-- Card 9 -->
     <div class="card">
-      <h2>2024</h2>
+  <h2>٢٠٢٤</h2>
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/Intel 2024 sustainability summit.png" alt="Intel Sustainability Summit in 2024" />
+          <img src="img/Intel 2024 sustainability summit.png" alt="قمة الاستدامة لإنتل عام 2024" />
         </div>
         <div class="card-back">
-          <h3>Sustainability Summit</h3>
-          <p>Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on next-generation sustainable semiconductor manufacturing.</p>
+          <h3>قمة الاستدامة</h3>
+          <p>استضافت إنتل أول قمة للاستدامة، وجمعت الموردين والمسؤولين الحكوميين وقادة الصناعة للتعاون في تصنيع أشباه الموصلات المستدامة للجيل القادم.</p>
         </div>
       </div>
     </div>
+
   </section>
 
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  <p style="margin-bottom:2rem;">مرر لعرض الجدول الزمني | مرر فوق البطاقات لمعرفة المزيد!</p>
+
+  <!-- قسم الأعمدة الثلاثة الجديد -->
+    <section class="container my-5 three-col-section">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+    <i class="fas fa-globe fa-2x mb-3 icon-global"></i>
+          <h3>الانتشار العالمي</h3>
+          <p>تمتد ممارسات الاستدامة في إنتل حول العالم، لضمان استفادة المجتمعات من الابتكار في جميع أنحاء الكرة الأرضية.</p>
+          <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/community-global-sites.html" class="btn btn-primary">تعرف أكثر</a>
+        </div>
+        <div class="col-md-4 mb-4">
+    <i class="fas fa-leaf fa-2x mb-3 icon-green"></i>
+          <h3>الابتكار الأخضر</h3>
+          <p>من الرقائق الموفرة للطاقة إلى الاستثمارات في الطاقة المتجددة، تقود إنتل التقدم البيئي في مجال التقنية.</p>
+          <a href="https://cdn.prod.website-files.com/669d541cc22f55aa66686031/67878d5e1507f0f30c29da76_Quant%20IP%20Green%20Innovation%20Report%20Intel-Corporation%202024-10-01%20(QuantIP).pdf" class="btn btn-success">تعرف أكثر</a>
+        </div>
+        <div class="col-md-4 mb-4">
+    <i class="fas fa-users fa-2x mb-3 icon-inclusive"></i>
+          <h3>مستقبل شامل</h3>
+          <p>تركز إنتل على التنوع والشمولية، لضمان أن التكنولوجيا المستدامة تمكّن الجميع.</p>
+          <a href="https://www.intc.com/news-events/press-releases/detail/1732/remaking-our-company-for-the-future" class="btn btn-info">تعرف أكثر</a>
+        </div>
+      </div>
+    </section>
+
+  <!-- Bootstrap Accordion (Interactive Component) -->
+  <section class="container my-5">
+    <div class="accordion" id="infoAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button intel-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="window.open('https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html', '_blank')">
+            ما هي استراتيجية الاستدامة لدى إنتل؟
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
+          <div class="accordion-body">
+            تركز إنتل على الابتكار، الطاقة المتجددة، والمسؤولية الاجتماعية لتحقيق مستقبل أكثر استدامة.
+          </div>
+        </div>
+      </div>
+      <!-- يمكنك إضافة المزيد من العناصر هنا -->
+    </div>
+  </section>
+
+
+  <!-- Auto-Detect Language & Adjust Layout Script -->
+  <script>
+    function updateDirection() {
+      const html = document.documentElement;
+      const lang = html.lang || navigator.language || 'en';
+      const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+      html.dir = rtlLangs.includes(lang.split('-')[0]) ? 'rtl' : 'ltr';
+    }
+    window.addEventListener('DOMContentLoaded', updateDirection);
+    window.setInterval(updateDirection, 2000);
+
+    // Language selector handler
+    window.changeLanguage = function(lang) {
+      window.location.href = 'https://translate.google.com/translate?hl=&sl=ar&tl=' + lang + '&u=' + encodeURIComponent(window.location.href);
+    }
+  </script>
+
+
+  <!-- Subscription Form -->
+  <section aria-label="نموذج الاشتراك في النشرة الإخبارية" class="newsletter-section" dir="rtl">
+    <h2>اشترك في نشرتنا للاستدامة</h2>
+    <form action="#" method="post" class="newsletter-form" autocomplete="on">
+      <label for="newsletter-email">البريد الإلكتروني:</label>
+      <input type="email" id="newsletter-email" name="email" required aria-required="true" placeholder="أدخل بريدك الإلكتروني" />
+  <button type="submit" class="custom-btn">اشترك</button>
+    </form>
+  </section>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-top">
       <nav>
-        <a href="https://www.intel.com/content/www/us/en/company-overview/company-overview.html">Company Overview</a>
-        <a href="https://www.intel.com/content/www/us/en/support/contact-us.html">Contact Intel</a>
-        <a href="https://newsroom.intel.com/">Newsroom</a>
-        <a href="https://www.intc.com/">Investors</a>
-        <a href="https://www.intel.com/content/www/us/en/jobs/life-at-intel.html">Careers</a>
-        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/corporate-responsibility.html">Corporate Responsibility</a>
-        <a href="https://www.intel.com/content/www/us/en/inclusion/inclusion-at-intel.html">Inclusion</a>
-        <a href="https://www.intel.com/content/www/us/en/company-overview/public-policy.html">Public Policy</a>
+    <a href="https://www.intel.com/content/www/us/en/company-overview/company-overview.html">نظرة عامة على الشركة</a>
+    <a href="https://www.intel.com/content/www/us/en/support/contact-us.html">اتصل بإنتل</a>
+    <a href="https://newsroom.intel.com/">غرفة الأخبار</a>
+    <a href="https://www.intc.com/">المستثمرون</a>
+    <a href="https://www.intel.com/content/www/us/en/jobs/life-at-intel.html">الوظائف</a>
+    <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/corporate-responsibility.html">المسؤولية المؤسسية</a>
+    <a href="https://www.intel.com/content/www/us/en/inclusion/inclusion-at-intel.html">الشمولية</a>
+    <a href="https://www.intel.com/content/www/us/en/company-overview/public-policy.html">السياسة العامة</a>
       </nav>
     </div>
 
@@ -184,11 +286,13 @@
 
     <div class="footer-bottom">
       <a href="https://www.intel.com" target="_blank">
-        <img src="img/intel-logo-transparent.png" alt="Intel Logo Transparent" />
+  <img src="img/intel-logo-transparent.png" alt="شعار إنتل الشفاف" />
       </a>
-      <p>© Intel Corporation</p>
+  <p>© شركة إنتل. جميع الحقوق محفوظة.</p>
     </div>
-  </footer>
 
+
+
+  </main>
 </body>
 </html>
